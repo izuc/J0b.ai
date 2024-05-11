@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="1dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_title_eee">
+
+
+                    <RelativeLayout
+                        android:id="@+id/top_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="25dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_back"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/backkkk" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/poppins_700"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/tv_title"
+                            android:layout_gravity="start"
+                            android:text="@string/skills"
+                            android:textColor="@color/white"
+                            android:textSize="23dp" />
+                    </RelativeLayout>
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/top_bar">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/edit_text"
+                                android:padding="@dimen/_10sdp">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/iv_text"
+                                    android:layout_width="@dimen/_18sdp"
+                                    android:layout_height="@dimen/_18sdp"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/edit_name"
+                                    android:tint="@color/white" />
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/et_text"
+                                    style="@style/editTextStyle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_7sdp"
+                                    android:layout_toEndOf="@+id/iv_text"
+                                    android:hint="Enter Text"
+                                    android:inputType="textCapSentences"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="#8F8F8F"
+                                    android:textSize="@dimen/_14sdp" />
+                            </RelativeLayout>
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/btn_save"
+                                style="@style/poppins_800"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginVertical="@dimen/_30sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:layout_marginBottom="@dimen/_30sdp"
+                                android:background="@drawable/button"
+                                android:gravity="center"
+                                android:paddingVertical="10dp"
+                                android:text="@string/save"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_17sdp" />
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

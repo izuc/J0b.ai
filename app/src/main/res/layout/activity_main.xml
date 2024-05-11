@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/rel_bottom_menu_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_startad2">
+
+            <View
+                android:id="@+id/view_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:background="@drawable/card_top_shadow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/view_shadow"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_home_click"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_home"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/card_12dp"
+                        android:backgroundTint="@color/menuColor">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_home"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/mm_home_fill" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_resume_maker_click"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_resume_maker"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/card_12dp"
+                        android:backgroundTint="@color/menuColor">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_resume_maker"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/mm_resume_maker_fill" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_my_resume_click"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_my_resume"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/card_12dp"
+                        android:backgroundTint="@color/menuColor">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_my_resume"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/mm_my_resume_fill" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_setting_click"
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_setting"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/card_12dp"
+                        android:backgroundTint="@color/menuColor">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_setting"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/mm_setting_fill" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_startad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gnt_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_startad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gnt_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/banner_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

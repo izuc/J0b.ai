@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginVertical="20dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="1dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <RelativeLayout
+                    android:id="@+id/top_bar_references"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="25dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_back_references"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/backkkk" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/poppins_700"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/references"
+                        android:textColor="@color/white"
+                        android:textSize="23dp" />
+                </RelativeLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_bar_references">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <!-- Name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/edit_text"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_name_references"
+                                android:layout_width="@dimen/_18sdp"
+                                android:tint="@color/white"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/edit_name" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et_name_references"
+                                style="@style/editTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:layout_toEndOf="@+id/iv_name_references"
+                                android:hint="Enter Name"
+                                android:inputType="textCapSentences"
+                                android:textColor="@color/white"
+                                android:textColorHint="#8F8F8F"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+
+                        <!-- Email -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/edit_text"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_email_references"
+                                android:layout_width="@dimen/_18sdp"
+                                android:tint="@color/white"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/edit_email" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et_email_references"
+                                style="@style/editTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:layout_toEndOf="@+id/iv_email_references"
+                                android:hint="Enter Email Address"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/white"
+                                android:textColorHint="#8F8F8F"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+
+                        <!-- Phone Number -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/edit_text"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_number_references"
+                                android:layout_width="@dimen/_18sdp"
+                                android:tint="@color/white"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/edit_number" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et_number_references"
+                                style="@style/editTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:layout_toEndOf="@+id/iv_number_references"
+                                android:hint="Enter Contact Number"
+                                android:inputType="phone"
+                                android:textColor="@color/white"
+                                android:textColorHint="#8F8F8F"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+
+                        <!-- Organization -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/edit_text"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_organization_references"
+                                android:layout_width="@dimen/_18sdp"
+                                android:tint="@color/white"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/edit_organization" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et_organization_references"
+                                style="@style/editTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:layout_toEndOf="@+id/iv_organization_references"
+                                android:hint="Enter Organization"
+                                android:inputType="textCapSentences"
+                                android:textColor="@color/white"
+                                android:textColorHint="#8F8F8F"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+
+                        <!-- Designation -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/edit_text"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_designation_references"
+                                android:layout_width="@dimen/_18sdp"
+                                android:tint="@color/white"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/edit_designation" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et_designation_references"
+                                style="@style/editTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:layout_toEndOf="@+id/iv_designation_references"
+                                android:hint="Enter Role"
+                                android:inputType="textCapSentences"
+                                android:textColor="@color/white"
+                                android:textColorHint="#8F8F8F"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/btn_save_references"
+                            style="@style/poppins_800"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_30sdp"
+                            android:background="@drawable/button"
+                            android:gravity="center"
+                            android:layout_marginHorizontal="30dp"
+                            android:paddingVertical="10dp"
+                            android:text="@string/save"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_17sdp" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

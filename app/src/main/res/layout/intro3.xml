@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_30sdp" android:layout_marginRight="@dimen/_30sdp" android:layout_centerInParent="true" android:layout_marginHorizontal="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ic_image" android:layout_width="wrap_content" android:layout_height="@dimen/_230sdp" android:src="@drawable/intro3"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_20sdp" android:textColor="@color/text2" android:gravity="center" android:id="@+id/tv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:text="@string/intro3" android:layout_below="@+id/ic_image" android:layout_centerHorizontal="true" style="@style/poppins_700"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_16sdp" android:textColor="@color/text1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:text="@string/intro_b_3" android:layout_below="@+id/tv_1" android:layout_centerHorizontal="true" style="@style/poppins_600"/>
+    </RelativeLayout>
+</RelativeLayout>

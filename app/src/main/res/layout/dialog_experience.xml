@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginVertical="20dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="1dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <RelativeLayout
+                    android:id="@+id/top_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="25dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/backkkk" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/poppins_700"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="start"
+                        android:text="@string/experience"
+                        android:textColor="@color/white"
+                        android:textSize="23dp" />
+                </RelativeLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_bar">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/edit_text"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_name"
+                                android:layout_width="@dimen/_18sdp"
+                                android:tint="@color/white"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/edit_organization" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et_organization"
+                                style="@style/editTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:layout_toEndOf="@+id/iv_name"
+                                android:hint="Enter Organization"
+                                android:inputType="textCapSentences"
+                                android:textColor="@color/white"
+                                android:textColorHint="#8F8F8F"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rel_percentage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/edit_text"
+                                android:padding="@dimen/_10sdp">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/iv_from_date"
+                                    android:layout_width="@dimen/_18sdp"
+                                    android:layout_height="@dimen/_18sdp"
+                                    android:layout_centerVertical="true"
+                                    android:tint="@color/white"
+                                    android:src="@drawable/icon_calendar" />
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/et_from_date"
+                                    style="@style/editTextStyle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_7sdp"
+                                    android:layout_toEndOf="@+id/iv_from_date"
+                                    android:hint="From Date"
+                                    android:inputType="textCapSentences"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="#8F8F8F"
+                                    android:textSize="@dimen/_14sdp" />
+                            </RelativeLayout>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="to"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/edit_text"
+                                android:padding="@dimen/_10sdp">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/iv_to_date"
+                                    android:layout_width="@dimen/_18sdp"
+                                    android:layout_height="@dimen/_18sdp"
+                                    android:layout_centerVertical="true"
+                                    android:tint="@color/white"
+                                    android:src="@drawable/icon_calendar" />
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/et_to_date"
+                                    style="@style/editTextStyle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_7sdp"
+                                    android:layout_toEndOf="@+id/iv_to_date"
+                                    android:hint="To Date"
+                                    android:inputType="textCapSentences"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="#8F8F8F"
+                                    android:textSize="@dimen/_14sdp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/edit_text"
+                            android:padding="@dimen/_10sdp">
+
+                            <CheckBox
+                                android:id="@+id/check_current_working"
+                                style="@style/poppins_700"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:buttonTint="@color/white"
+                                android:text="@string/currently_employment"
+                                android:textColor="@color/white"
+                                android:textColorHint="#8F8F8F"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/edit_text"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_year"
+                                android:layout_width="@dimen/_18sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:tint="@color/white"
+                                android:src="@drawable/edit_name" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et_role"
+                                style="@style/editTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:layout_toEndOf="@+id/iv_year"
+                                android:hint="Enter Role in Organization"
+                                android:inputType="text"
+                                android:textColorHint="#8F8F8F"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/btn_save"
+                            style="@style/poppins_800"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_30sdp"
+                            android:background="@drawable/button"
+                            android:gravity="center"
+                            android:layout_marginHorizontal="30dp"
+                            android:paddingVertical="10dp"
+                            android:text="@string/save"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_17sdp" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

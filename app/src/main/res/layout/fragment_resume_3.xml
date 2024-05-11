@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="220dp"
+                        android:background="#f0f0f0"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/poppins_800"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:text="CONTACT ME"
+                            android:textColor="#242424"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffc700" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginTop="3.5dp"
+                                android:src="@drawable/ic_call_3" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_number"
+                                style="@style/poppins_500"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:gravity="center_vertical"
+                                android:text="245-642-3498"
+                                android:textColor="#242424"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginTop="3.5dp"
+                                android:src="@drawable/ic_mail_3" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_email"
+                                style="@style/poppins_500"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:gravity="center_vertical"
+                                android:text="hello@reallygretsite.com"
+                                android:textColor="#242424"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginTop="3.5dp"
+                                android:src="@drawable/ic_address_3" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_address"
+                                style="@style/poppins_500"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:gravity="center_vertical"
+                                android:text="123 Anywhere St., Any city,  State, Country 12345"
+                                android:textColor="#242424"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/poppins_800"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="EDUCATION"
+                            android:textColor="#242424"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffc700" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_education"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/poppins_800"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="REFERENCES"
+                            android:textColor="#242424"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffc700" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_references"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="225dp"
+                        android:layout_height="270dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/card_bottom_radius">
+
+                        <RelativeLayout
+                            android:layout_width="200dp"
+                            android:layout_height="250dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/card_bottom_radius"
+                            android:backgroundTint="#ffc700" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/iv_profile"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="50dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/blank_profile"
+                            app:riv_border_color="#dddddd"
+                            app:riv_border_width="7dp"
+                            app:riv_corner_radius="2dp"
+                            app:riv_oval="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_name"
+                        style="@style/poppins_800"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Arthur Lilienal"
+                        android:textColor="#000000"
+                        android:textSize="50dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_designation"
+                        style="@style/poppins_500"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:paddingHorizontal="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="GRAPHIC DESIGNER"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_designation"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffc700" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/poppins_800"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="PROFILE"
+                            android:textColor="#242424"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffc700" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_about_me"
+                            style="@style/poppins_600"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="8dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="8dp"
+                            android:text="Ut ut dolor vel neque sollicitudin pharetra. Nam finibus nisi et ante posuere, eget elementum urna accumsan. Vivamus enim lectustempus vitae scelerisque ac, pulvinar euismod tortor."
+                            android:textColor="#242424"
+                            android:textSize="14dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/poppins_800"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="WORK EXPERIENCE"
+                            android:textColor="#242424"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffc700" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_experience"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            android:paddingHorizontal="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/poppins_800"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="SKILLS"
+                            android:textColor="#242424"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffc700" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_skills"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:nestedScrollingEnabled="false"
+                            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                            app:spanCount="3" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

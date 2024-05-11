@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timespan_options">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>Within a week</item>
+        <item>Within 2 weeks</item>
+    </string-array>
+</resources>
